@@ -1,2 +1,2 @@
 # DivasLive
- All the Pop SInger bots in one place
+ All the Pop Singer bots in one place
