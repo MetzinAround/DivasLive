@@ -39,14 +39,13 @@ function tweetEvent(tweet) {
   var text = tweet.text;
   var name = tweet.user.screen_name;
 
-    let regex = /(impress)/ig;
-    var str = text;
+    let regex = /(impress)/gi;
     
-    let impressive = str.match(regex) || [];
+    let impressive = text.match(regex) || [];
 
     var isItImpressive = impressive.length>0;
-  
-      console.log(isItImpressive)
+      console.log(impressive);
+      console.log(isItImpressive);
   //from itsAydrian in twitch chat on 1/28 😘    
   let i = Math.floor(Math.random() * 3);
   

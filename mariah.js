@@ -33,8 +33,8 @@ function tweetEvent(tweet) {
     let fantasy = str.match(regex) || [];
 
     let alwaysBeMyBaby = fantasy.length>0;
-  
-      console.log(alwaysBeMyBaby)
+      console.log(fantasy);
+      console.log(alwaysBeMyBaby);
   //from itsAydrian in twitch chat on 1/28 😘    
   let i = Math.floor(Math.random() * 3);
   

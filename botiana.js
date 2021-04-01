@@ -33,8 +33,8 @@ function tweetEvent(tweet) {
     let godIsAWoman = str.match(regex) || [];
 
     var sevenRings = godIsAWoman.length>0;
-  
-      console.log(sevenRings)
+      console.log(godIsAWoman);
+      console.log(sevenRings);
   //from itsAydrian in twitch chat on 1/28 😘    
   let i = Math.floor(Math.random() * 3);
   
