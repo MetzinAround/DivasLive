@@ -8,7 +8,7 @@ if (process.env.NODE_ENV === "develop") {
 const schedule = require("node-schedule");
 const rule = new schedule.RecurrenceRule();
 rule.hour = 12;
-rule.tz = "Etc/GMT+5";
+rule.tz = "Etc/GMT+4";
 
 
 // Create an Twitter object to connect to Twitter API
