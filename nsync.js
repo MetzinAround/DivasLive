@@ -120,8 +120,8 @@ function fridayNight() {
 };
 
 
-const job1 = schedule.scheduleJob(rule, fridayNight);
+const job2 = schedule.scheduleJob(rule, fridayNight);
 
-job1.on("Just Got Paid!", fridayNight);
+job2.on("Just Got Paid!", fridayNight);
 
 
