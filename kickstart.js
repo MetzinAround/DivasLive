@@ -6,9 +6,9 @@ if (process.env.NODE_ENV === "develop") {
 
 const schedule1 = require("node-schedule");
 const rule1 = new schedule1.RecurrenceRule();
-rule.hour = 11;
-rule.minute = 17;
-rule.tz = "Etc/GMT+4";
+rule1.hour = 11;
+rule1.minute = 17;
+rule1.tz = "Etc/GMT+4";
 
 
 var Twit = require('twit');
