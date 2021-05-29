@@ -4,8 +4,8 @@ if (process.env.NODE_ENV === "develop") {
   require("dotenv").config();
 };
 
-const schedule = require("node-schedule");
-const rule = new schedule.RecurrenceRule();
+const schedule1 = require("node-schedule");
+const rule1 = new schedule1.RecurrenceRule();
 rule.hour = 11;
 rule.minute = 17;
 rule.tz = "Etc/GMT+4";
@@ -17,9 +17,9 @@ var config = require('./configPj.js');
 
 var T = new Twit(config);
 
-var stream = T.stream('statuses/filter', { track: '@MetzinAround' });
+//var stream = T.stream('statuses/filter', { track: '@MetzinAround' });
 
-stream.on('tweet', letsGetIt);
+//stream.on('tweet', letsGetIt);
   
 function letsGetIt()
   {
@@ -36,6 +36,6 @@ function letsGetIt()
         }})
   }
 
-const job3 = schedule.scheduleJob(rule, letsGetIt);
+const job3 = schedule.scheduleJob(rule1, letsGetIt);
   
 job3.on("Begging for a sponsor", letsGetIt);
