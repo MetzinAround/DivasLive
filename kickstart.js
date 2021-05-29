@@ -36,6 +36,6 @@ function letsGetIt()
         }})
   }
 
-const job3 = schedule.scheduleJob(rule1, letsGetIt);
+const job3 = schedule1.scheduleJob(rule1, letsGetIt);
   
 job3.on("Begging for a sponsor", letsGetIt);
