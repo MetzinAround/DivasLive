@@ -78,7 +78,7 @@ function letsGoGirls()
   T.post('statuses/update', {status: "...let's go, girls."});
 };
 
-const job1 = schedule.scheduleJob(rule, letsGoGirls());
+const job1 = schedule.scheduleJob(rule, letsGoGirls);
 
 job1.on("tweetIt", letsGoGirls)
 

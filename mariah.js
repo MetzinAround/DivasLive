@@ -75,7 +75,7 @@ function AlwaysBeMyBaby()
   T.post('statuses/update', {status: "Boy don't you know you can't escape me...  https://www.youtube.com/watch?v=Dxce3s7bV9s"});
 };
 
-const job1 = schedule.scheduleJob(rule, AlwaysBeMyBaby());
+const job1 = schedule.scheduleJob(rule, AlwaysBeMyBaby);
 
 job1.on("tweetIt", AlwaysBeMyBaby);
 
