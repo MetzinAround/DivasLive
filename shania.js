@@ -69,18 +69,16 @@ function tweetEvent(tweet) {
   } else {
     console.log("We can't go, girls");
   }
-}
+};
 
-const job1 = schedule.scheduleJob(rule, function()
-{
-  console.log("bah baaaaaaaah budah duh dah dah");
-  T.post('statuses/update', {status: "...let's go, girls."});
-}); 
 
 function letsGoGirls() 
 {
-  console.log("We went Girls")
+  console.log("bah baaaaaaaah budah duh dah dah");
+  T.post('statuses/update', {status: "...let's go, girls."});
 };
+
+const job1 = schedule.scheduleJob(rule, letsGoGirls());
 
 job1.on("tweetIt", letsGoGirls)
 

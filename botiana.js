@@ -3,6 +3,15 @@ console.log("one taught me patience...");
 if (process.env.NODE_ENV === "develop") {
   require("dotenv").config();
 };
+
+//node schedule
+const schedule = require("node-schedule");
+const rule = new schedule.RecurrenceRule();
+rule.hour = 12;
+rule.minute = 30;
+rule.tz = "Etc/GMT+4";
+
+
 //march 11, trying to get this to it's own repo :(
 // Create an Twitter object to connect to Twitter API
 var Twit = require('twit');
@@ -59,3 +68,13 @@ function tweetEvent(tweet) {
     console.log("One taught me pain");
   }
 }
+
+/*function letsGoGirls() 
+{
+  console.log("I don't know a lot of Ariana Grande");
+  T.post('statuses/update', {status: "...let's go, girls."});
+};
+
+const job1 = schedule.scheduleJob(rule, letsGoGirls());
+
+job1.on("tweetIt", letsGoGirls)*/

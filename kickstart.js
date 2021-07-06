@@ -24,7 +24,7 @@ var T = new Twit(config);
 function letsGetIt()
   {
     let dayToday = new Date().toISOString().slice(0, 10)
-    const postStatus = `I'm once again asking @KickstartDew and @MountainDew for a sponsorship. Hit me up!`  ;
+    const postStatus = ` It's ${dayToday} and I'm once again asking @KickstartDew and @MountainDew for a sponsorship. Hit me up!`  ;
 
       T.post('statuses/update', {status: postStatus}, function (err, data, response)
         { 

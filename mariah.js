@@ -4,6 +4,14 @@ if (process.env.NODE_ENV === "develop") {
   require("dotenv").config();
 };
 
+
+// using Node Schedule from https://github.com/node-schedule/node-schedule suggested by Brendan O'leary https://twitter.com/olearycrew
+const schedule = require("node-schedule");
+const rule = new schedule.RecurrenceRule();
+rule.hour = 6;
+rule.minute = 30;
+rule.tz = "Etc/GMT+4";
+
 // Create an Twitter object to connect to Twitter API
 const Twit = require('twit');
 
@@ -58,7 +66,17 @@ function tweetEvent(tweet) {
   } else {
     console.log("Just a sweet sweet fantasy");
   }
-}
+};
 
+
+function AlwaysBeMyBaby() 
+{
+  console.log("You can't escape me");
+  T.post('statuses/update', {status: "Boy don't you know you can't escape me...  https://www.youtube.com/watch?v=Dxce3s7bV9s"});
+};
+
+const job1 = schedule.scheduleJob(rule, AlwaysBeMyBaby());
+
+job1.on("tweetIt", AlwaysBeMyBaby);
 
 
