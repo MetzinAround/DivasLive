@@ -8,6 +8,7 @@ if (process.env.NODE_ENV === "develop") {
 const schedule = require("node-schedule");
 const rule = new schedule.RecurrenceRule();
 rule.hour = 12;
+rule.minute = 1;
 rule.tz = "Etc/GMT+4";
 
 
