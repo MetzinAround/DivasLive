@@ -81,6 +81,5 @@ function letsGoGirls()
 
 const job1 = schedule.scheduleJob(rule, letsGoGirls);
 
-job1.on("tweetIt", letsGoGirls)
 
 
