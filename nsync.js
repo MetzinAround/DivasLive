@@ -61,16 +61,16 @@ function tweetEvent(tweet) {
 
               T.post('statuses/update', moneyMoneyMoney, function (err, data, response) {
                 if (!err) {
-                  console.log(response);
+                  console.log(response.text);
                 } else {
-                  console.log(err);
+                  console.log(err.message);
                 }
               });
             }
           })
         }, 5000)
       } else {
-        console.log(err);
+        console.log(err.message);
       }
     });
   };
@@ -105,16 +105,16 @@ function fridayNight() {
             const finalParams = { status: postStatus, media_ids: [checkTheMirror] }
 
             T.post('statuses/update', finalParams, function (err, data, response) {
-              console.log(response)
+              console.log('Tweeted: ' + response.text);
             })
           } else {
-            console.log(err);
+            console.log(err.message);
           }
         }
         )
       }, 5000);
     } else {
-      console.log(err)
+      console.log(err.message);
     };
   })
 };
@@ -122,6 +122,5 @@ function fridayNight() {
 
 const job2 = schedule.scheduleJob(rule, fridayNight);
 
-job2.on("Just Got Paid!", fridayNight);
 
 
