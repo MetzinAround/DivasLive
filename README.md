@@ -37,4 +37,4 @@ Shania's functions are to tweet ["Let's go Girls..."](https://www.youtube.com/wa
  
  JustBotPaid has two functions. The first is to tweet every Friday at 5:30pm Eastern Time Zone. This tweet includes the video of NSYNC' performing their cover of "Just Got Paid" at the [2001 Billboards awards show](https://www.youtube.com/watch?v=byuPyhx5Ytg). The second function is to tweet back at a user when they use "💰💰💰" emojis. When a user does this, JustBotPaid responds with a gif from the video for "Just Got Paid," but uses the [original version](https://www.youtube.com/watch?v=jl1mQASHc48) instead. . 
  
-
+Kickstart.js is a bot that uses my personal twitter accounut to tweet at mountain dew for a sponsorship. 
