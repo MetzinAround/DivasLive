@@ -1,6 +1,6 @@
 # DivasLive
 
- A single repo for all of the Divas Live Bot series by Chloe Condon and Pj Metz. Using [Twit](https://github.com/ttezel/twit) to interact with the Twitter API. Much of the code used from [The Coding Train](https://www.youtube.com/watch?v=RF5_MPSNAtU) and then organized to benefit us and our purposes. All bots' keys are stored in a .env file you'll need in order to keep your API keys hidden. For responses, users must tag the bot and use a secret word or series of emojis to make the function run. Currently hosted on Heroku.
+ A single repo for all of the Divas Live Bot series by [Chloe Condon](https://www.twitter.com/ChloeCondon) and [Pj Metz](https://www.twitter.com/metzinaround). Using [Twit](https://github.com/ttezel/twit) to interact with the Twitter API. Much of the code used from [The Coding Train](https://www.youtube.com/watch?v=RF5_MPSNAtU) and then organized to benefit us and our purposes. All bots' keys are stored in a .env file you'll need in order to keep your API keys hidden. For responses, users must tag the bot and use a secret word or series of emojis to make the function run. Currently hosted on Heroku.
 
 - [Shania_bot](#shania-bot)
 - [Mechanical_Carey](#mariah)
