@@ -51,7 +51,7 @@ function cuteWithoutTheE(tweet) {
     
     let timberwolves = text.match(regex) || [];
 
-    var bikeScene = taking.length>0;
+    var bikeScene = timberwolves.length>0;
       console.log(timberwolves);
       console.log(bikeScene);
   //from Aydrian in twitch chat on 1/28 😘    
