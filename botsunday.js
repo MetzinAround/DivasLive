@@ -25,7 +25,7 @@ var stream = T.stream('statuses/filter', { track: '@TakingB_tSunday' });
 
 stream.on('tweet', cuteWithoutTheE);
 
-function greatRomances(tweet) 
+function greatRomances() 
 {
     const dateObj = new Date();
     let monthName = dateObj.toLocaleString("default", { month: "long" });
@@ -42,7 +42,7 @@ let youKnowHowIDo = ["https://youtu.be/4ldjbjwim4k", "https://youtu.be/Hw7WbowK_
 
 let headClub = [" I just wanna break you down so badly...", " The weight of my decisions were impossible to hold, But they were never yours, they were never yours", " When I let you down, look past your doubt, just please, don't lose your faith in me...", " Your lipstick - his collar, Angel. I know exactly what goes on...", " Maybe I should hate you for this, never really did ever quite get that far...", " To hell with you and all your friends...", " Literate and stylish, kissable and quiet...", " I'm still not sleeping thinking I've crawled home from worse than this...", " I'm an addict for dramatics, I confuse the two for love...", " We won't stand for hazy eyes anymore..."  ]
 
-function cuteWithoutTheE() {
+function cuteWithoutTheE(tweet) {
     var id = tweet.id_str;
     var text = tweet.text;
     var name = tweet.user.screen_name;
