@@ -61,7 +61,7 @@ function cuteWithoutTheE(tweet) {
   if ((text.includes('@TakingB_tSunday') && bikeScene === true)) {
 
     // Start a reply back to the sender
-    var replyText = youKnowHowIDo[i] + "@"+ name + headClub[i]  ;
+    var replyText = "@"+ name + headClub[i] + youKnowHowIDo[i]  ;
     
     // Post that tweet
     T.post('statuses/update', { status: replyText, in_reply_to_status_id: id}, tweeted);
