@@ -25,7 +25,7 @@ var stream = T.stream('statuses/filter', { track: '@TakingB_tSunday' });
 
 stream.on('tweet', cuteWithoutTheE);
 
-function greatRomances() 
+function greatRomances(tweet) 
 {
     const dateObj = new Date();
     let monthName = dateObj.toLocaleString("default", { month: "long" });
