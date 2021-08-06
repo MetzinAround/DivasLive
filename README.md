@@ -6,6 +6,9 @@
 - [Mechanical_Carey](#mariah)
 - [Botiana Grande](#botiana)
 - [Just Bot Paid](#nsync)
+- BoneThugs
+- Kickstart
+- Taking B_t Sunday
 
 ## Meet The Bots
 
@@ -38,3 +41,7 @@ Shania's functions are to tweet ["Let's go Girls..."](https://www.youtube.com/wa
  JustBotPaid has two functions. The first is to tweet every Friday at 5:30pm Eastern Time Zone. This tweet includes the video of NSYNC' performing their cover of "Just Got Paid" at the [2001 Billboards awards show](https://www.youtube.com/watch?v=byuPyhx5Ytg). The second function is to tweet back at a user when they use "💰💰💰" emojis. When a user does this, JustBotPaid responds with a gif from the video for "Just Got Paid," but uses the [original version](https://www.youtube.com/watch?v=jl1mQASHc48) instead. . 
  
 Kickstart.js is a bot that uses my personal twitter accounut to tweet at mountain dew for a sponsorship. 
+
+Bone Thugs, or First of the Month, tweets the music video for First of the month on the first day of the month. 
+
+Taking Bot Sunday responds to tweets where it's tagged with "emo" with a music video and some lyrics from that song. It also tweets on the firstt of the month, inserting whatever month it is into the lyrics "September never stays this cold, where I come from and you know..."
