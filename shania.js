@@ -34,7 +34,7 @@ stream.on('tweet', tweetEvent);
 const thatDontImpressMeMuch = ["🎶🎵🙄🚀🤓", "🎶🎵🙄🏎", "🎶🎵🙄👨‍🎬🍿"];
 
 // Here a tweet event is triggered!
-function tweetEvent(tweet) {
+async function tweetEvent(tweet) {
 
   var id = tweet.id_str;
   var text = tweet.text;
@@ -43,13 +43,16 @@ function tweetEvent(tweet) {
     let regex = /(impress)/gi;
     
     let impressive = text.match(regex) || [];
+    
+    await new Promise(resolve => setTimeout(resolve, 1500));
 
     var isItImpressive = impressive.length>0;
       console.log(impressive);
       console.log(isItImpressive);
   //from itsAydrian in twitch chat on 1/28 😘    
   let i = Math.floor(Math.random() * 3);
-  
+
+
   // checks text of tweet for mention of Shania Bot
   if ((text.includes('@bot_shania') && isItImpressive === true)) {
 
