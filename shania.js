@@ -44,14 +44,15 @@ async function tweetEvent(tweet) {
     
     let impressive = text.match(regex) || [];
     
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    await new Promise(resolve => setTimeout(resolve, 1500));
 
     var isItImpressive = impressive.length>0;
       console.log(impressive);
       console.log(isItImpressive);
   //from itsAydrian in twitch chat on 1/28 😘    
   let i = Math.floor(Math.random() * 3);
-  await 
+
+
   // checks text of tweet for mention of Shania Bot
   if ((text.includes('@bot_shania') && isItImpressive === true)) {
 
