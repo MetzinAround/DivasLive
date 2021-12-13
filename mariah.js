@@ -77,7 +77,3 @@ function AlwaysBeMyBaby()
 };
 
 const job1 = schedule.scheduleJob(rule, AlwaysBeMyBaby);
-
-job1.on("tweetIt", AlwaysBeMyBaby);
-
-
