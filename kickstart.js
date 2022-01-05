@@ -28,7 +28,7 @@ function letsGetIt()
     let date2 = new Date();
     let Difference_In_Time = date2.getTime() - date1.getTime();
     let dayCounter = Math.floor(Difference_In_Time / (1000 * 3600 * 24));
-    const postStatus = ` It's been ${dayCounter} days of asking @KickstartDew and @MountainDew for a sponsorship. Hit me up!`  ;
+    const postStatus = ` It's been ${dayCounter} days of asking @MountainDew for a Pineapple Orange Mango #KickstartDew sponsorship. I'm ready to do the Dew, are you, @MountainDew? `  ;
 
       T.post('statuses/update', {status: postStatus}, function (err, data, response)
         { 
